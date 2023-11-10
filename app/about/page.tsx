@@ -1,5 +1,15 @@
+'use client';
+
+import { useState } from 'react';
+
 export default function About() {
-  return (
-    <div>About page is works</div>
-  )
+	const [counter, setCounter] = useState(0);
+
+	return (
+		<div>
+			About page is works
+			<button onClick={() => setCounter(counter + 1)}>Counter</button>
+			Counter : {counter}
+		</div>
+	);
 }
